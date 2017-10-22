@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{#      </button>#}
+
+{#      <div class="collapse navbar-collapse" id="navbarsExampleDefault">#}
+{#        <ul class="navbar-nav mr-auto">#}
+{#          <li class="nav-item active">#}
+{#            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>#}
+{#          </li>#}
+{##}
+{#        </ul>#}
+{#        <form class="form-inline my-2 my-lg-0">#}
+{#          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">#}
+{#          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+{#        </form>#}
+{#      </div>#}
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <h3 class="display-5">
+    <!-- Example row of columns -->
+      <form action="/postdata/" method="post">
+          <div class="row">
+             <div class="card-header-tabs">
+            <h4 >Question 1</h4> <h5>What is Photosynthesis ?</h5>
+            <p><input type="text" name="question1"  size="60" autofocus placeholder="write your answer........."/>  </p>
+          
+             </div>
+
+          <div class="card-header-tabs">
+
+            <br><h4 class="q2">Question 2</h4> <h5>Why is ladakh called a cold desert ?</h5>
+            <p><input type="text" name="question2"  size="60" autofocus placeholder="write your answer........."/>  </p>
+          <br>
+            </div>
+
+            <div class="card-header-tabs">
+            <br><h4 >Question 3</h4> <h5>what is your name ?</h5>
+            <p><input type="text" name="question3"  size="60" autofocus placeholder="write your answer........."/>  </p>
+            <br><p align="center"><button class="btn btn-default btn-lg" type="submit">Submit &raquo;</button></p>
+            
+            </div>
+      </div>
+      </form>
+    </div>
+
+
+{% endblock %}

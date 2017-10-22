@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            
+          </li>
+
+        </ul>
+        
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
+      <div class="container" background-color: black>
+        {#<h1 class="display-3">Real Check !</h1>#}
+        <img src="{% static 'img/Picture1.png' %}" align='center' height="45%" width="45%" style="position:relative;right:-300px">
+        
+      </div>
+
+    <div class="container" background-color: black;>
+      <!-- Example row of columns -->
+
+      <div class="row">
+        <div class="col-md-14">
+
+          <font color="white" face="Goudy Stout">
+
+          <p ><h2 style="position:relative;right:-300px ">Want to take up a test?</h2></p>
+          </font>
+        </div>
+        </div>
+        
+          <br><p><a class="btn btn-default btn-lg" href="{% url 'question' %}/" role="button" style="position:relative;right:-450px">Start Here &raquo;</a></p>
+        
+      
+      
+      <hr>
+        <footer>
+        <p>&copy; RC 2017</p>
+        </footer>
+       <!-- /container -->
+
+{% endblock %}
